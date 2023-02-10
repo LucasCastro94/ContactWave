@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="26dp"
+    android:background="@color/blue"
+    android:layout_height="400dp">
+
+    <ImageView
+        android:id="@+id/logoAdd"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ContactWave"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/allerta"/>
+
+    <EditText
+        android:id="@+id/editText_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/border_effect"
+        android:hint="@string/nome"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:maxLength="25"
+        android:layout_below="@id/logoAdd"
+        android:textColor="@color/black"
+        android:shadowColor="@color/black"
+        android:shadowRadius="1"
+        />
+
+    <EditText
+        android:id="@+id/editText_Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/border_effect"
+        android:hint="@string/fone"
+        android:textAlignment="center"
+        android:inputType="phone"
+        android:maxLength="16"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:shadowColor="@color/black"
+        android:shadowRadius="1"
+        android:layout_below="@id/editText_Name"
+        />
+
+    <com.google.android.material.button.MaterialButton
+       android:id="@+id/btn_save_newContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_Phone"
+        android:layout_marginTop="30dp"
+        android:text="@string/salvar"
+        style="@style/btnEffects"
+
+        />
+
+
+
+
+</RelativeLayout>
